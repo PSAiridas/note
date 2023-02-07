@@ -4,8 +4,8 @@
         <div>
             <div>
                 <div class="homepage">
-                    <a href="{{ route('login')}}"> login</a>
-                    <a href="{{ route('register')}}"> register</a>
+                    <a href="{{ route('login')}}"> Login</a>
+                    <a href="{{ route('register')}}"> Register</a>
                 </div>
             </div>
         </div>
