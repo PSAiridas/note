@@ -287,6 +287,9 @@ main {
 
 
     }
+    li {
+        list-style: none;
+    }
 }
 .div_user, .div_pw {
     display: flex;
@@ -312,6 +315,7 @@ main {
         margin-right: 10px;
         color: white;
     }
+
 }
 
 .div_remember {

@@ -3,6 +3,11 @@
         <div>
             <div>
     <!-- Session Status -->
+                <div style="color:white;">
+                    <p>email: demo@gmail.com</p>
+                    <p>password: demodemo</p>
+                </div>
+
                 <x-auth-session-status class="mb-4" :status="session('status')" />
 
                 <form method="POST" action="{{ route('login') }}">
@@ -12,7 +17,9 @@
                     <div class="div_user">
                         {{-- <x-input-label for="email" :value="__('Email')" /> --}}
                         <i class="fas fa-user"></i>
-                        <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="Username"  required autofocus />
+                        <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="Email"  required autofocus />
+                    </div>
+                    <div>
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
 
@@ -25,7 +32,8 @@
                                         name="password"
                                         required autocomplete="current-password"
                                         placeholder="Password" />
-
+                    </div>
+                    <div>
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
 
